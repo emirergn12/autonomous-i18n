@@ -80,11 +80,11 @@ graph TD
     REPAIR --> FIREWALL
     FIREWALL --> STORE
 
-    CLI <--> Core Engine
-    CLI <--> AI Pipeline
-    BRIDGE <--> Core Engine
-    BRIDGE <--> AI Pipeline
-    WEB <--> BRIDGE
+    CLI --> EXTRACTOR
+    CLI --> MASKER
+    BRIDGE --> DIFF
+    BRIDGE --> MASKER
+    WEB --> BRIDGE
 ```
 
 ---
