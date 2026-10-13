@@ -1,0 +1,13 @@
+{
+  "sourceLocale": "en",
+  "targetLocales": ["tr", "de"],
+  "localesDir": "./locales",
+  "format": "nested-json",
+  "include": ["src/**/*.{ts,tsx}"],
+  "ai": {
+    "provider": "mock"
+  },
+  "rules": {
+    "failOnMissingInCI": false
+  }
+}

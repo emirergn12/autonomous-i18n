@@ -1,0 +1,20 @@
+{
+  "billing": {
+    "tax_notice": "[DE] Tax Notice",
+    "upgrade_plan": "[DE] Upgrade Plan"
+  },
+  "checkout": {
+    "discount_applied": "[DE] Discount Applied",
+    "error_declined": "[DE] Error Declined",
+    "submit_btn": "[DE] Submit Btn",
+    "title": "[DE] Title"
+  },
+  "common": {
+    "welcome": "[DE] Welcome"
+  },
+  "nav": {
+    "home": "Startseite",
+    "login": "[DE] Login",
+    "pricing": "[DE] Pricing"
+  }
+}

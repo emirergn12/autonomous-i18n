@@ -1,0 +1,30 @@
+{
+  "name": "autonomous-i18n",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Autonomous i18n & Localization Manager for Developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emirergn12/autonomous-i18n.git"
+  },
+  "author": "emirergn12 (https://github.com/emirergn12)",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "19.3.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

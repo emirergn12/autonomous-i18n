@@ -1,0 +1,20 @@
+{
+  "billing": {
+    "tax_notice": "Vergi Bildirimi",
+    "upgrade_plan": "Planı Yükselt"
+  },
+  "checkout": {
+    "discount_applied": "[TR] Discount Applied",
+    "error_declined": "[TR] Error Declined",
+    "submit_btn": "[TR] Submit Btn",
+    "title": "[TR] Title"
+  },
+  "common": {
+    "welcome": "Hoş geldiniz"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "login": "[TR] Login",
+    "pricing": "[TR] Pricing"
+  }
+}
