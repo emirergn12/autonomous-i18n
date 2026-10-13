@@ -2,6 +2,10 @@
   <h1>🌐 Autonomous i18n & Localization Manager</h1>
   <p><strong>Code-Intelligent, Context-Aware Autonomous Software Localization Engine for Developers</strong></p>
 
+  <p align="center">
+    <strong>English</strong> | <a href="README.tr.md">Türkçe</a>
+  </p>
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green.svg)](https://nodejs.org/)
 [![Vitest](https://img.shields.io/badge/Tests-35%20Passed-brightgreen.svg)](https://vitest.dev/)
