@@ -60,10 +60,12 @@ program
 program
   .command('check')
   .description('CI/CD health check mode. Fails with exit code 1 if missing keys exist')
+  .option('--cwd <path>', 'Working directory path')
   .option('--format <type>', 'Output format (console, markdown, json)', 'console')
   .option('-o, --output <file>', 'Write check report to file (e.g. report.md)')
   .action(async (options) => {
     await checkCommand({
+      cwd: options.cwd,
       format: options.format,
       outputFile: options.output,
     });

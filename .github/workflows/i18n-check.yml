@@ -24,21 +24,14 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run i18n Localization Check
-        run: npx @i18n-manager/cli check --format markdown --output ./i18n-report.md
+      - name: Build Monorepo Packages
+        run: npm run build
 
-      - name: Comment PR Report
-        if: github.event_name == 'pull_request' && failure()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            if (fs.existsSync('./i18n-report.md')) {
-              const report = fs.readFileSync('./i18n-report.md', 'utf8');
-              github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: report
-              });
-            }
+      - name: Run Test Suite (35 tests)
+        run: npm test
+
+      - name: Verify TypeScript Type Safety
+        run: npm run typecheck
+
+      - name: Run i18n Localization Check on Examples
+        run: node ./packages/cli/dist/index.js check --cwd ./examples --format markdown --output ./i18n-report.md
